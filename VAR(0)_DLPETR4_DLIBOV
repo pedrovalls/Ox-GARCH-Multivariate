@@ -1,0 +1,34 @@
+// Batch code for VAR(0) for DLPETR4_Per and DLIBOV_Per
+module("PcGive");
+package("PcGive", "Multiple-equation");
+loaddata("C:\Users\Pedro\Dropbox\Topicos_em_Financas_2022\Nova_pasta\MGRACH\MGARCH_2020\DADOS_BR.xlsx");
+
+// algebra to define the percentage log returns of PETR4 and IBOV
+
+algebra{
+DIBOV=100*dlog(IBOV_SB);
+DPETR4=100*dlog(PETR4C_SB);
+}
+
+// algebra to define the percentage log returns of PETR4 and IBOV square
+
+algebra{
+DIBOVSQ=DIBOV*DIBOV;
+DPETR4SQ=DPETR4*DPETR4;
+}
+
+
+system
+{
+    Y = DIBOV, DPETR4;
+    U = Constant;
+}
+estimate("OLS", 2000-01-04, 0, 2020-09-09, 0);
+store("residuals");
+
+// algebra to get squared residuals
+algebra {
+res_eq_ibovsq=VDIBOV^2;
+res_eq_petr4sq=VDPETR4^2;
+}
+
