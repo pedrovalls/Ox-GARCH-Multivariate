@@ -9,22 +9,5 @@ The EWMA-Multivariado.fl is a batch programme in Ox to estimate an Multivariate 
 for the vector $y_{t}=(DLIBOV_{t} : DLPETR4_{t})$, using the same $\lambda = 0.94$.
 
 The Ox-GARCH-BEKK-Scalar-Diagional is a batch programme in Ox to estimate an Multivariate
-BEKK scalar or diagonal using:
+BEKK scalar or diagonal. 
 
-$\mathbf{H}_{t}$ = $\mathbf{C}^{\prime}$ $\mathbf{C}$ +  $\sum\limits_{i=1}^{p}$ 
-
-$\mathbf{A}_{i}^{\prime}$  
-
-
-
-$(\bf{\epsilon }_{t-i}$ $\bf{\epsilon }_{t-i}^{\prime})$ $\mathhbf{A}_{i}$
-
-
-
-
-=$\bf{C}^{\prime }\bf{C}$+$+$\sum\limits_{j=1}^{q}\mathbf{B}_{j}^{\prime}\mathbf{H}_{t-j}\mathbf{B}_{j}$
-
-onde $\mathbf{C}$ \'{e} uma matriz triangular superior$,$ $\mathbf{A}_{i}$
-(para $i=1,...,p$) e $\mathbf{B}_{j}$ (para $j=1,...,q$) s\~{a}o matrizes
-quadradas. A especifica\c{c}\~{a}o no Ox permite que estas matrizes sejam
-diagonais ou escalares.
