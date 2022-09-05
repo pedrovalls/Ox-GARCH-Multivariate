@@ -11,3 +11,5 @@ for the vector $y_{t}=(DLIBOV_{t} : DLPETR4_{t})$, using the same $\lambda = 0.9
 The Ox-GARCH-BEKK-Scalar-Diagional is a batch programme in Ox to estimate an Multivariate
 BEKK scalar or diagonal. 
 
+The Ox-Garch-CCC-unigarch-N-Studen-t is a batch programme in Ox to estimate a CCC model 
+with univariate GARCH models for each component using Normal and Studen-t distributions.
