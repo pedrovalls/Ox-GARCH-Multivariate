@@ -11,7 +11,9 @@ for the vector $y_{t}=(DLIBOV_{t} : DLPETR4_{t})$, using the same $\lambda = 0.9
 The Ox-GARCH-BEKK-Scalar-Diagional is a batch programme in Ox to estimate an Multivariate
 BEKK scalar or diagonal using:
 
-$\mathbf{H}_{t}$ = $\mathbf{C}^{\prime}$ $\mathbf{C}$ +  $\sum\limits_{i=1}^{p}$ $\mathbf{A}_{i}^{\prime}$  
+$\mathbf{H}_{t}$ = $\mathbf{C}^{\prime}$ $\mathbf{C}$ +  $\sum\limits_{i=1}^{p}$ 
+
+$\mathbf{A}_{i}^{\prime}$  
 
 
 
