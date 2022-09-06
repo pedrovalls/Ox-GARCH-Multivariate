@@ -13,3 +13,8 @@ BEKK scalar or diagonal.
 
 The Ox-Garch-CCC-unigarch-N-Studen-t is a batch programme in Ox to estimate a CCC model 
 with univariate GARCH models for each component using Normal and Studen-t distributions.
+
+
+The Ox-GARCH-Multivariate-DCC-TT is a batch programme in Ox to estimate DCC-Tse-Tsui modes
+with univariate GARCH and FIPARCH models for each compoennets using Normal and 
+Student-t distributions.
